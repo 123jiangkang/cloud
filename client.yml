@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+      #  http://localhost:8080/actuator/info
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: eureka-client
+
+EUREKA-CLIENT02: #配置负载均衡算法
+    ribbon:
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #\u89C4\u5219\u7C7B\u540D
