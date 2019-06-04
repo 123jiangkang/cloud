@@ -4,7 +4,7 @@
   #\u5E94\u7528\u540D
 spring:
   application:
-    name: eureka-client002
+    name: eureka-client02
   #\u6570\u636E\u5E93\u914D\u7F6E
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
