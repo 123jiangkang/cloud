@@ -1,0 +1,25 @@
+#
+#spring:
+#  application:
+#    name: cdd
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CLOUD-CONFIG
+#      profile: data
+# 指的是从名叫 CLOUD-CONFIG 的服务中心服务器上获取到名叫 cdd-data.yml的配置文件
+# 
+# 注意：如果访问配置文件application-data.yml配置文件会将applicaiotn.yml 和 application-data.yml两个配置文件中的内容组装在一起
+# 所以application.yml配置文件就是以application开头的所有配置文件的共有配置文件，可以将配置文件中相同的配置写在applicaiont配置文件中
+# 
+# 注意: git的配置文件中最好不要加上向注册中心注册的配置
+#       最好是写在每一个具体的配置文件中，因为如果是默认的8761端口是可以注册上去的
+#       但是如果改成其他的如：8762端口 ，就注册不上
+#       因为系统默认是先将git上的配置文件信息加载到本地，但是将配置文件的信息加载到本地需要通过配置中心去加载
+#       这个时候没有指定向具体的配置中心加载配置，就加载不到配置文件
+#       8761可以是因为8761是默认，找不到就会找默认的端口
+#
+#
+#
+#
