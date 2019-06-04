@@ -10,7 +10,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
       url: jdbc:mysql://localhost:3306/myblog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
-      username: root
+      username: root11
       password: root
       #\u914D\u7F6E\u76D1\u542C\u4F7F\u7528\u65E5\u5FD7
       filters: stat,wall,slf4j
