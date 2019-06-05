@@ -1,7 +1,7 @@
 eureka:
-  instance:
-    hostname: localhost
-# spring:
+#   instance:
+#     hostname: localhost
+spring:
 #   application:
 #     name: eureka-client
     #消息队列配置
