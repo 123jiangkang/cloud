@@ -15,7 +15,7 @@ spring:
       #\u914D\u7F6E\u76D1\u542C\u4F7F\u7528\u65E5\u5FD7
       filters: stat,wall,slf4j
       initialization-mode: always
-env: test
+env: product
 logging:
   level:
     com: debug
