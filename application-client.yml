@@ -1,9 +1,9 @@
 eureka:
   instance:
     hostname: localhost
-spring:
-  application:
-    name: eureka-client
+# spring:
+#   application:
+#     name: eureka-client
     #消息队列配置
   rabbitmq:
     host: 192.168.11.129
