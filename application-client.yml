@@ -4,7 +4,12 @@ eureka:
 spring:
   application:
     name: eureka-client
-
+    #消息队列配置
+  rabbitmq:
+    host: 192.168.11.129
+    port: 5672
+    username: guest
+    password: guest
 EUREKA-CLIENT02: #配置负载均衡算法
     ribbon:
       NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #\u89C4\u5219\u7C7B\u540D
